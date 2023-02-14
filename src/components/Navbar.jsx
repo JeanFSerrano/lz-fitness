@@ -38,7 +38,7 @@ const Navbar = () => {
                         className='flex items-center cursor-pointer'
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
-                        {isMenuOpen == false ?
+                        {isMenuOpen == true ?
                             <CgClose
                                 size={'50px'}
                                 color='#E78E93'
@@ -61,7 +61,7 @@ const Navbar = () => {
                     </nav>
                 }
 
-                {isMenuOpen == false && (
+                {isMenuOpen == true && (
 
                     <ul className='flex flex-col gap-4 fixed top-0 left-0 right-0 bg-white bg-opacity-80 z-10 mt-24 px-4 py-8 rounded-md'>
                         <li>Conjuntos de calça</li>
